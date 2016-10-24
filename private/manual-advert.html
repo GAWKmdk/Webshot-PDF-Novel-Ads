@@ -1,0 +1,27 @@
+<!-- rendered with meteorhacks:ssr as string html and passed to webshot for pdf -->
+<div class="container">
+    
+    <div class="row">
+        <div class="col-sm-8 col-sm-offset-2">
+            <h1 class="text-center">Meteor PDF Generator</h1>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-sm-6 col-sm-offset-3">
+            {{#each manual}}
+                <div class="row">
+                    <div class="col-sm-3 col-sm-offset-2">
+                        <img src="{{image_url}}" width="75px" height="" alt="">
+                    </div>
+                                                                   
+                    <div class="col-sm-7">
+                        <h4>{{name}}</h4>
+                        <p>{{description}}</p>
+                    </div>
+                </div>
+            {{/each}}
+        </div>
+    </div>
+                                         
+</div>

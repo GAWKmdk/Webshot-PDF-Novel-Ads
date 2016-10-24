@@ -1,0 +1,15 @@
+<!-- renders <!DOCTYPE html> --> 
+{{{getDocType}}}
+<html lang="en">
+<head>
+    <!-- renders CSS --> 
+    <style type="text/css">        
+            {{css}}
+    </style>
+</head>
+<body>
+    <!-- renders select template --> 
+   {{> Template.dynamic template=template data=data}}
+   
+</body>
+</html>
